@@ -7,7 +7,7 @@ const AdicionarContacto= async (req, res) => {
     if (ExisteContacto(req.body.name))
       return res.status(400).send({ message: "El contacto ya existe" });
  
-    return res.status(200).send({ userRole });
+    
   }; 
 
  const ExisteContacto= async (req, res) => {
